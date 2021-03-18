@@ -13,6 +13,14 @@ color:#333;
    
  h1,h2,h3,h4,h5,h6 { 
     margin:0; 
+ } 
+ hr {  
+     display:block; 
+     width:100%; 
+     height:1px; 
+     margin:40px 0;
+     border:0; 
+     background-color:#e5e5e5;
  }
  /*.container*/
  .container { 
@@ -184,11 +192,17 @@ color:#333;
    /*Section*/
 .section { 
     padding:80px 0;    
-} 
+}  
+.section-devices { 
+    background:url("../images/devices-bg.jpg") 
+    center no-repeat; 
+    background-size:cover; 
+    padding-bottom:0;
+}
 .section__header {  
     width:100%; 
     max-width:950px; 
-    margin:0 auto 40px;  
+    margin:0 auto 50px;  
     text-align:center;
 } 
  
@@ -291,4 +305,47 @@ color:#333;
 .stat__text {  
     font-size:14px; 
     text-transform:uppercase;
+} 
+/*Services*/ 
+.services { 
+    display:flex;  
+    flex-wrap: wrap; 
+} 
+.services__item {  
+    flex:1 1 0;  
+    padding-left:85px;  
+    padding-right:35px;
+    position:relative; 
+} 
+.services__img { 
+    position:absolute; 
+    top:0; 
+    left:28px; 
+    z-index:1; 
+} 
+.services__title {  
+    margin-bottom:10px;
+    font-size:14px; 
+    color:#333; 
+    text-transform:uppercase;
+} 
+.services__text {  
+    font-size:15px; 
+    color:#999;
+} 
+ /*Devices*/
+.devices { 
+    width:100%; 
+    max-width:600px; 
+    margin:0 auto;  
+    position:relative;
+} 
+.devices__item { 
+    display:block; 
+} 
+.devices__item--iphone { 
+    position:absolute; 
+    bottom:-80px; 
+    right:0; 
+    z-index:1;
 }
