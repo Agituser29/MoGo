@@ -12,17 +12,17 @@
     <title>Mogo</title>
 </head>
 <body>   
-<header class="header"> 
+<header class="header" id="header"> 
   <div class="container">  
        <div class="header__inner">  
            <div class="header__logo">MoGo</div>
       
        <nav class="nav"> 
-           <a class="nav__link active" href="#">About</a> 
-           <a class="nav__link" href="#">Service</a> 
-           <a class="nav__link" href="#">Blog</a>  
-           <a class="nav__link" href="#">Work</a>  
-           <a class="nav__link" href="#">Contact</a> 
+           <a class="nav__link active" href="#"  data-scroll="#about" >About</a> 
+           <a class="nav__link" href="#" data-scroll="#services">Service</a> 
+           <a class="nav__link" href="#" data-scroll="#blog">Blog</a>  
+           <a class="nav__link" href="#" data-scroll="#works">Work</a>  
+           <a class="nav__link" href="#" data-scroll="#footer">Contact</a> 
            <a class="nav__link" href="#"><i class="fas fa-shopping-cart"></i> </a> 
            <a class="nav__link" href="#"><i class="fas fa-search"></i> </a>
        </nav>  
@@ -34,7 +34,7 @@
 </header>      
 <div class="page">  
 
- <div class="intro">  
+ <div class="intro" id="intro">  
      <div class="container"> 
          <div class="intro__inner">  
              <h2 class="intro__suptitle">Creative Template</h2>
@@ -65,8 +65,8 @@
             </div> 
         </div>        
     </div>   
-   </div> <!--/Intro-->
- <section class="section">  
+   </div> <!--/.intro-->
+ <section class="section" id="about">  
      <div class="container">   
 
          <div class="section__header"> 
@@ -113,7 +113,7 @@
     
  </div>  <!--/.card-->
 </div> <!--/.container-->
-</section>  
+</section> <!--/.about--> 
  
  <div class="statistics">  
      <div class="container">  
@@ -149,7 +149,7 @@
      </div>
  </div> <!--/.statistics-->  
   
- <section class="section">  
+ <section class="section"id="services">  
       <div class="container"> 
           
          <div class="section__header"> 
@@ -209,7 +209,7 @@
       
       </div> <!--/.conteiner--> 
 
- </section> 
+ </section> <!--/.services-->  
   
  <section class="section section-devices">  
      <div class="container">  
@@ -226,7 +226,7 @@
         
 
      </div>
-    </section>  
+    </section> <!--/.devices-->   
      
     <section class="section">  
         <div class="container">  
@@ -301,7 +301,7 @@
             </div><!--container--> 
             
 
-    </section>
+    </section><!--/.we do-->  
 
     <div class="section section--gray"> 
         <div class="container"> 
@@ -317,7 +317,7 @@
                 </div>
              </div>
         </div>
-    </div> 
+    </div> <!--/.reviews 1-->  
      
     <section class="section"> 
         <div class="container"> 
@@ -417,7 +417,7 @@
             </div>   <!--/.card-->
             
         </div><!--/.container-->
-    </section>  
+    </section>  <!--/.team-->  
     <div class="section section--gray">  
          <div class="container">  
              <div class="logos">  
@@ -441,9 +441,9 @@
                 </div>
              </div>
          </div>
-    </div>  
+    </div> <!--/.logos-->   
    
-     <section class="section">   
+     <section class="section" id="works">   
          <div class="container"> 
             <div class="section__header"> 
                 <h3 class="section__suptitle">What we do</h3> 
@@ -518,7 +518,7 @@
 
             </div>  
         </div>  <!--/.works-->
-     </section>
+     </section><!--/.works--> 
      <div class="section "> 
         <div class="container"> 
              <div class="reviews">  
@@ -534,7 +534,7 @@
              </div>
         </div>   
 
-    </div>  
+    </div> <!--/.reviews 2-->   
     <section class="section section--clients">  
         <div class="container"> 
             <div class="section__header"> 
@@ -586,9 +586,9 @@
 
             </div> <!--/.clients-->
         </div> <!--/.container-->
-    </section>  
+    </section> <!--/.clients-->   
 
-    <section class="section">  
+    <section class="section" id="blog">  
         <div class="container"> 
             <div class="section__header"> 
                 <h3 class="section__suptitle">Our stories</h3> 
@@ -681,7 +681,7 @@
               </div><!--/.blog-->
        
         </div>  <!--/.container-->
-    </section> 
+    </section><!--/.blog-end of section-->   
     <section class="section section--map"> 
         <div class="container">   
             <div class="map"> 
@@ -691,9 +691,9 @@
                 </h2>
             </div>
         </div>
-    </section> 
+    </section> <!--/.map-->  
      
-   <footer class="footer">  
+   <footer class="footer" id="footer">  
        <div class="container"> 
            <div class="footer__inner">  
                <div class="footer__col footer__col--first">   
@@ -795,7 +795,11 @@
                 © 2016 MoGo free PSD template by <span>Laaqiq</span>
              </div>            
        </div> <!--/.container-->
-   </footer>
-</div> <!--/.page-->
+   </footer><!--/.footer--> 
+</div> <!--/.page--> 
+<script  
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> 
+</script> 
+<script src="assets/js/app.js"> </script>
 </body>
 </html>
