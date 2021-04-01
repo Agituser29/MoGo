@@ -163,7 +163,10 @@ color:#333;
     top:24px; 
     right:24px; 
     z-index:1;
-} 
+}  
+.nav--toggle:focus { 
+    outline:0;
+}
 .nav--toggle__item {  
     display:block;
     width:100%; 
@@ -564,11 +567,15 @@ color:#333;
     text-transform:uppercase;
 }
     /*Reviews*/  
-.reviews { 
-    padding:0 110px; 
+.reviews {  
+
     position:relative;
-}      
-.reviews__item { 
+}    
+.reviews .slick-slider { 
+    padding:0 110px;
+}   
+.reviews__item {  
+    min-height:210px;
     padding-left:245px;  
     position:relative;  
     border:1px solid transparent
@@ -576,7 +583,7 @@ color:#333;
 .reviews__photo {  
     display:block;
     width:210px; 
-    height:210px;  
+    height:207px;  
    /* border:2px solid #95e1d3;*/
     position:absolute; 
     top:0; 
@@ -585,7 +592,7 @@ color:#333;
 }   
 .reviews__photo--avatar { 
     position:absolute; 
-    top:-35px; 
+    top:-5px; 
     left:0; 
     z-index:1;
 }
@@ -611,15 +618,23 @@ color:#333;
     margin-right:10px;
     background-color:#f38181;
 }
-.reviews__btn {  
+ 
+.slick-arrow {   
+    display:block;
     font-size:0; 
-    color:transparent;
+    color:transparent; 
+    border:0; 
+    background:none;  
+    cursor:pointer;
     position:absolute; 
     top:50%;  
     z-index:1;
     transform:translateY(-50%);
-}   
-.reviews__btn:after { 
+}    
+.slick-arrow:focus {  
+    outline:0;
+}
+.slick-arrow:after { 
     content:""; 
     display:block; 
     width:16px; 
@@ -628,11 +643,13 @@ color:#333;
     border-left:2px solid #ccc; 
   
 } 
-.reviews__btn--prev { 
+ 
+ .slick-prev { 
     left:0; 
     transform: rotate(-45deg);
 } 
-.reviews__btn--next { 
+.reviews__btn--next, 
+.slick-next  {  
     right:0; 
     transform: rotate(135deg);
 }
@@ -1100,7 +1117,7 @@ font-size:52px;
      border-bottom:0;
  } 
   /*Reviews*/    
-  .reviews { 
+  .reviews .slick-slider { 
      padding:0 60px;
  }  
 .reviews__photo { 
@@ -1161,7 +1178,10 @@ position:absolute;
 top:100%; 
 left:0; 
 background-color:#eb8b8d;
-}    
+}     
+.nav.active { 
+    display:block;
+}
 .nav__link { 
     display:block; 
     margin:0; 
@@ -1305,10 +1325,10 @@ font-size:15px;
     right:-80px;
 } 
 /*Reviews*/ 
-.reviews { 
+.reviews .slick-slider { 
     padding:0;
 } 
-.reviews__btn { 
+.slick-arrow { 
     top:18%;
 }
 /*Logos*/ 
