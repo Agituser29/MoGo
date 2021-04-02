@@ -21,7 +21,11 @@ color:#333;
      margin:40px 0;
      border:0; 
      background-color:#e5e5e5;
- } 
+ }  
+  
+ .slick-slide:focus { 
+    outline:0;} 
+
  /*Page*/ 
  .page {  
      overflow:hidden;  
@@ -284,7 +288,8 @@ color:#333;
     background:url("../images/devices-bg.jpg") 
     center no-repeat; 
     background-size:cover; 
-    padding-bottom:0;
+    padding-bottom:0; 
+    overflow:visible;
 } 
 .section--gray { 
     background-color:#f8f8f8;
@@ -474,7 +479,7 @@ color:#333;
     max-width:600px; 
     margin:0 auto;  
     position:relative; 
-    /*overflow:hidden;*/
+   
 } 
 .devices__item { 
     display:block;  
@@ -1379,4 +1384,6 @@ font-size:15px;
 .subscribe__btn { 
     width:100%;
 }   
-} 
+}   
+
+
